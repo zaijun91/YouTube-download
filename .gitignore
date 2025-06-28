@@ -1,0 +1,33 @@
+# PyInstaller
+/dist/
+/build/
+*.spec
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# Our temporary conversion script
+convert_icon.py
+
+# Ignore downloaded media files
+*.mp4
+*.m4a
+*.webm
+*.mkv
+*.mp3
