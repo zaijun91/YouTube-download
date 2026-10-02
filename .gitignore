@@ -31,3 +31,7 @@ convert_icon.py
 *.webm
 *.mkv
 *.mp3
+
+# Local authentication cookies must never be committed
+cookies*.txt
+*.cookies.txt
