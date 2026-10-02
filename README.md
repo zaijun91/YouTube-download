@@ -15,6 +15,12 @@
 - **独立可执行文件**: 已打包为单个 `.exe` 文件，最终用户无需安装 Python 环境。
 - **依赖项检查**: 启动时会自动检查所需的 `ffmpeg` 依赖是否存在。
 
+## 🔐 Cookie 安全说明
+
+- `cookies.txt` 是本机认证数据，可能包含登录凭据；不要提交到 Git、发送到 Issues，或打包进可执行文件与安装程序。
+- 默认不需要 Cookie。若确有登录需求，请仅使用本人账号在本机新导出的 Cookie，并将文件留在本机程序目录；缺少该文件时程序会尝试常规下载。
+- 本仓库已忽略 Cookie 文件。若认证数据曾公开，删除当前文件并不能使旧凭据失效，也不能清除 Git 历史；请先在对应账号中撤销受影响的登录会话，并另行清理历史记录。
+
 ## 🚀 如何使用 (最终用户)
 
 1.  **下载**: 前往本项目的 [**Releases (发行版)**](https://github.com/zaijun91/YouTube-download/releases) 页面。
@@ -58,7 +64,7 @@
 
 4.  **构建可执行文件 (使用 PyInstaller):**
     ```bash
-    pyinstaller --noconfirm --onefile --windowed --icon "yt.ico" --add-data "yt.ico;." --add-data "cookies.txt;." downloader_gui.py
+    pyinstaller --noconfirm --onefile --windowed --icon "yt.ico" --add-data "yt.ico;." downloader_gui.py
     ```
 
 ## 💻 技术栈
